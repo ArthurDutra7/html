@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Paris';
+    src: url(fontes/ArtisanParis-Regular.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-image: linear-gradient(to right, #c49d54, #d38151);
+  }
+
+
+main{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #97412ebb;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1{
+    font-family: 'Paris Times New Roman', Times, serif;
+    color: #dd3914;
+    text-align: center;
+    text-shadow: 1px 1px 2px #972a119a;
+}
+
+h2{
+    color: #1C8C81;
+}
+
+p{
+    text-align: justify;
+}

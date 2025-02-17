@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Teste</title>
+</head>
+<body>
+    <h1>Olá Mundo</h1>
+    <h2>Vou deixar tudo que estou aprendendo até agora, podemos <br>pular o parágrafo com a tag (BR)</h2>
+    <p>*Podemos colocar emoji com o site Emojipedia😉</p>
+    <p>*Colocamos fotos com a tag (IMG), e buscamos em sites (Unsplash), (Pexels)</p>
+    <p><img src="foto gigante.jpg" alt="Foto cachorro"></p>
+    <p>*Favicon é o ícone do site, e temos sites para isso: <br>favicon.cc-faz seu próprio e favicon.io-para transformar em ícone sua arte</p>
+    <p>*Podemos escrever em ítalico com <em>a tag(EM)</em></p>
+    <p>*Em <strong>negrito</strong> usamos a tag (STRONG)</p>
+    <p>*Podemos marcar um texto com a <mark style="background-color: blue;">tag (MARK)</mark>, e mudar a cor com style e background-color</p>
+    <p>*Podemos usar a tag (Q) para fazer uma <q>citação ou fala de alguém</q>, e também a tag <blockquote>BLOCKQUOTE</blockquote> e o CITE para colocar da onde veio</p>
+    <p>*Usamos o (ABBR) para fazer a abreviações de palavras como PQ <abbr title="POR QUÊ"></abbr></p>
+    <p>*Usamos o (OL) e (UL) em seguida de (LI)para fazer listas <ol>
+        <li>Acordar</li>
+        <li>Tomar Café da manhã</li>
+        <li>Ir malhar</li>
+    </ol> e usar (TYPE) para mudar o estilo da lista</p>
+    <p>*Como fazer listas Mistas e de Definição</p>
+    <h2>Linguagens favoritas, OL</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="A">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="A" start="4">
+            <li>PHP</li>
+            <li>Pyton</li>
+        </ol>
+    </ol>
+    <h2>Jogos Preferidos, UL</h2>
+    <ol>
+        <li>Xbox</li>
+        <ul type="square" >
+            <li>Forza</li>
+            <li>Rocket League</li>
+        </ul>
+        <li>Play</li>
+        <ul type="square">
+            <li>MotorGrid</li>
+            <li>Call of Duty</li>
+        </ul>
+    </ol>
+    <h2>Listas de Definições, DL--dt-dt--dd-dd--DL</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de Design</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação</dd>
+    </dl>
+
+    <h1>Usando links externos, usando a tag (A)</h1>
+    <p>Você pode acessar o meu <a href="https://youtube.com/cursoemvideo" target="_blank" rel="external">canal do youtube do GG</a></p>
+    <h1>Usando links Internos</h1>
+    <p>Está é a 1 pág. do site, Se quiser,<a href="pag002.html" rel="next" target="_self">acesse ela aqui</a></p>
+    <p>Você também pode acessar a pág. de notícias <a href="noticias/pag003.html" rel="next" target="_self">acesse aqui</a></p>
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/relatorio.pdf" download="relatorio.pdf" type="application/pdf">Baixar o livro em pdf</a></li>
+    </ul>
+
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tentar abrir esse site em disposítivos diferentes, usamos as tags (picture) + (source-srcset-type/png) e configuramos as dimensões da foto</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-peq.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-med.png" type="image/png">
+        <img src="imagens/foto-gra.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Colocando áudio no site</h1>
+    <p>Vamos colocar áudio no site, Usando as tags (áudio) + (controls) + (autoplay)</p>
+    <audio src="midia/musica-site.mp3" controls autoplay loop></audio>
+
+    <h1>Formatos de vídeo p/site</h1>
+    <p>Mostrando vídeos, hospedado no próprio servidos, tag (vídeo)</p>
+    <video src="videos/video-site-720p.mp4" width="560" controls autoplay loop></video>
+
+    <h2>Colocando vídeos, hospedados em servidor externos</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=rbv100AjgKpCfRWi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>Para colocar thumb basta apenas colocarmos (p+a) e a imagem que queremos</p>
+    <h2>Site adobe color, faz uma paleta das cores escolhidas. <br>Temos também o paletton.</h2>
+    <h2>Site CSS web safe fonts, para procurar fontes.</h2>
+</body>
+</html>
