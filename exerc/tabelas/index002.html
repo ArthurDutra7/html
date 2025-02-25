@@ -10,16 +10,33 @@
         }
         table{
             width: 500px;
-            border-collapse: collapse; /* Sempre usar essa tag p/tirar o espaçamento das linhas*/
+            border-collapse: collapse; 
+            position: relative;
         }
         td, th{
             border: 1px solid black;
             padding: 10px;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border: 1px solid black;
+        }
 
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: rgb(160, 158, 158);
         }
         .nun{
             text-align: right;
@@ -28,20 +45,13 @@
 </head>
 <body>
     <h1>Tabela Grande</h1>
-    <!-- Tabelas Grandes
-        Table
-            THEAD
-                TR , TD , TH
-            TBODY
-                TR , TD , TH
-            TFOOT
-                TR , TD , TH
-    -->
+
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -80,7 +90,7 @@
         </tbody> 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="nun"><strong>210.457.856</strong></td>
             </tr>
         </tfoot>
